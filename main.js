@@ -201,12 +201,26 @@ thirteen.innerHTML = answer;
 // ---------------------
 // Write a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
 // ---------------------
-
+(function(){ 
+ var fourteen = document.getElementById('fourteen');
+    var container = {};
 function charFreq(string){
-    //...
-}
+    var letters = string.split('').sort('');
+        letters.map(function(letter){
+            if(letter in container) {
+                container[letter] +=1;
+            } //end of if
+             else {
+                container[letter] = 1;
+            } //end of else
+        });//end of map
+        console.dir(container);
+         return container;
+}//end of charFreq
+var answer = charFreq('abbabcbdbabdbdb');
+fourteen.innerHTML = container;
 
-
+})();
 // ---------------------------
 // The Arrays You Will Work With
 // ---------------------------
