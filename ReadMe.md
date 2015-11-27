@@ -1,1 +1,3 @@
-starting the problems over to finish my original assignment and get extra practice
+For this assignment we were giving two practice files for working with functions and arrays.  
+
+http://jessesoldat.github.io/functions-for-dealing-with-arrays-try-2/
